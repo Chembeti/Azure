@@ -37,7 +37,7 @@ namespace Contoso.Transport.Services.Controllers
                     Origin = "CA",
                     Destination = "TX",
                     StatusCode = 1,
-                    Units = 101,
+                    Units = 111,
                     Weight = 2.5,
                     Created = DateTime.UtcNow,
                 },
