@@ -9,7 +9,9 @@ using Contoso.Transport.Services.Models;
 
 namespace Contoso.Transport.Services.Controllers
 {
-    public class PackageController : ApiController
+    [Authorize]
+    [RoutePrefix("api/package")]
+    public class PackageController : BaseController
     {
         private static IEnumerable<Package> packages;
 
@@ -18,6 +20,17 @@ namespace Contoso.Transport.Services.Controllers
             return packages.SingleOrDefault(p => p.Id == id);
         }
 
+        [Route("{id}/status")]
+        public IHttpActionResult GetStatus(int id)
+        {
+            // find the package
+            var package = packages.SingleOrDefault(p => p.Id == id);
+            if (package == null)
+            {
+                throw new HttpResponseException(Request.CreateResponse(HttpStatusCode.NotFound));
+            }
+            return new PackageResult(package.Status, Request);
+        }
         protected override void Initialize(HttpControllerContext controllerContext)
         {
             base.Initialize(controllerContext);
@@ -25,7 +38,7 @@ namespace Contoso.Transport.Services.Controllers
             //for testing
             GenerateStubs();
         }
-
+        
         private static void GenerateStubs()
         {
             packages = new List<Package>
@@ -64,6 +77,11 @@ namespace Contoso.Transport.Services.Controllers
                     Created = DateTime.UtcNow,
                 }
             };
+        }
+
+        public override string GetModule()
+        {
+            throw new NotImplementedException();
         }
     }
 }

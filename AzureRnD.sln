@@ -7,6 +7,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Contoso.Transport.Services"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Contoso.Transport.Services.Tests", "Contoso.Transport.Services.Tests\Contoso.Transport.Services.Tests.csproj", "{6D2B6D35-EF6C-4FC4-BF84-4D5964C95695}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "APIMAADDemo", "APIMAADDemo\APIMAADDemo.csproj", "{2C12A85A-2EE1-4FA9-8EE9-FF0CD27A966D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChembetiMobileService", "ChembetiMobileService\ChembetiMobileService.csproj", "{8BFCE1A3-C50B-4C99-8D76-061C42AC2E6B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +25,14 @@ Global
 		{6D2B6D35-EF6C-4FC4-BF84-4D5964C95695}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6D2B6D35-EF6C-4FC4-BF84-4D5964C95695}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6D2B6D35-EF6C-4FC4-BF84-4D5964C95695}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2C12A85A-2EE1-4FA9-8EE9-FF0CD27A966D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2C12A85A-2EE1-4FA9-8EE9-FF0CD27A966D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2C12A85A-2EE1-4FA9-8EE9-FF0CD27A966D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2C12A85A-2EE1-4FA9-8EE9-FF0CD27A966D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8BFCE1A3-C50B-4C99-8D76-061C42AC2E6B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8BFCE1A3-C50B-4C99-8D76-061C42AC2E6B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8BFCE1A3-C50B-4C99-8D76-061C42AC2E6B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8BFCE1A3-C50B-4C99-8D76-061C42AC2E6B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
